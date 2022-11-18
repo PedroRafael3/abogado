@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOGADO</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="abogado.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">PR</div>
+    <header>
+        <div id="logo">PR</div>
         <nav>
             <a href="http://">Inicio</a>
             <a href="http://">Materia</a>
@@ -19,47 +20,46 @@
     </header>
     <main>
         <section id="seccion1">
-            <div>
+            <div id="div-presentacion">
                 <h2>Presentación</h2>
-                <p>nnnnnnnnnnnnnnnnnnnnnnn<br>
-                nnnnnnnnnnnnnnnnnnnnnnnn<br>
-                nnnnnnnnnnnnnnnnnnnnnnnn<br>
-                nnnnnnnnnnnnnnnnnnnnnnnn<br>
-                nnnnnnnnnnnnnnnnnnnnnnnn<br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ducimus similique laboriosam dolorum nostrum. Expedita nulla delectus, 
+                porro sit quis asperiores, voluptas quasi veniam architecto temporibus unde 
+                accusantium perspiciatis excepturi tempore?
                 </p>
             </div>
-            <div class="circle"><img id="presentacion" src="./imagenes/presentacion.png" alt=""></div>   
+            <img id="img-presentacion" src="./imagenes/presentacion.svg" alt=""> 
         </section>
         <section id="seccion2">
             <h2>Materias</h2>
-            <div>
-                <img id="mercantil" src="./imagenes/mercantil.png" alt="">
-                <img id="negociacion" src="./imagenes/negociacion.png" alt="">
-                <img id="contrato" src="./imagenes/contrato.png" alt="">
-                <img id="dama_justicia" src="./imagenes/dama_justicia.png" alt="">
-                <img id="penal" src="./imagenes/penal.png" alt="">
-                <img id="internacional" src="./imagenes/internacional.png" alt="">
-                <img id="civil" src="./imagenes/civil.png" alt="">
+            <div id="materia">
+                <div id="div-mercantil"><img class="img-materia" src="./imagenes/mercantil.svg" alt="mercantil"></div>
+                <div id="div-negociacion"><img class="img-materia" src="./imagenes/negociacion.svg" alt="Apretón de manos"></div>
+                <div id="div-contrato"><img class="img-materia" src="./imagenes/contrato.svg" alt="Contrato"></div>
+                <div id="div-dama"><img class="img-materia" src="./imagenes/dama-justicia.svg" alt="Dama de la Justicia"></div>
+                <div id="div-penal"><img class="img-materia" src="./imagenes/penal.svg" alt="Esposas de policía"></div>
+                <div id="div-internacional"><img class="img-materia" src="./imagenes/internacional.svg" alt="Globo con banderas"></div>
+                <div id="div-civil"><img class="img-materia" id="civil" src="./imagenes/civil.svg" alt="Pareja y dos hijos"></div>
             </div>
-        </seccion>
+        </section>
         <section id="seccion3">
             <h2>Nuestro Equipo</h2>
-            <div>
-                <div class="carta">
-                    <h2></h2>
-                    <img src="" alt="">
+            <div id="contenedor-tajetas">
+                <div class="tarjeta">
+                    <h2>Nombre</h2>
+                    <img src="./imagenes/hombre1.svg" alt="Abogado">
                     <button>inf</button>
                     <p></p>
                 </div>
-                <div class="carta">
-                    <h2></h2>
-                    <img src="" alt="">
+                <div class="tarjeta">
+                    <h2>Nombre</h2>
+                    <img src="./imagenes/mujer.svg" alt="Abogada">
                     <button>inf</button>
                     <p></p>
                 </div>
-                <div class="carta">
-                    <h2></h2>
-                    <img src="" alt="">
+                <div class="tarjeta">
+                    <h2>Nombre</h2>
+                    <img src="./imagenes/hombre2.svg" alt="Abogado">
                     <button>inf</button>
                     <p></p>
                 </div>
@@ -68,24 +68,27 @@
         <section id="seccion4">
             <h2>CONTACTO</h2>
             <form action="" method="post" target="_blank">
-                <label for="nombre">Nombre y Apellido</label>
+                <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
                 <br>
                 <label for="edad">Edad</label>
                 <input type="number" name="edad" id="edad">
                 <br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <br>
                 <label for="telefono">Teléfono</label>
                 <input type="tel" name="telefono" id="telefono">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
                 <br>
                 <label for="direccion">Dirección</label>
                 <input type="text" name="direccion" id="direccion">
                 <br>
                 <label for="mensaje"> Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Describe brevemente cuales son tus objetivos."></textarea>
-                <button type="submit" value="Enviar" id="btn">Enviar</button>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Por favor describe brevemente la consulta."></textarea>
+                <button id="boton-enviar" type="submit" value="Enviar" id="btn">Enviar</button>
             </form>
         </section>
         <section id="seccion5">
@@ -98,9 +101,9 @@
         </section>
     </main>
     <footer>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="./imagenes/facebook.svg" alt="Facebook">
+        <img src="./imagenes/Instagram.svg" alt="Instagram">
+        <img src="./imagenes/telegram.svg" alt="Telegram">
         <p>&copy; Ponce & Ponce 322</p>
     </footer>
 </body>
