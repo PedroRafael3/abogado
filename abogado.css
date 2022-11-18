@@ -110,6 +110,7 @@ a:hover{
     height: 150px;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px goldenrod;
 }
 
 #seccion3{
@@ -132,9 +133,9 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
+    border: 3px solid #a28107;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px 5px;
+    box-shadow: 5px 5px 20px 5px goldenrod;
     margin: 20px auto;
 }
 
