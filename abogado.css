@@ -140,11 +140,11 @@ a:hover{
 
 #seccion4{
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 
 form{
-    width: 300px;
+    width: 320px;
     background-color: #a28107;
     font-weight: bold;
     border-radius: 10px;
@@ -181,11 +181,6 @@ textarea{
     color: white;
     border-radius: 5px;
     margin: 5px auto;
-}
-
-#seccion5{
-    width: 100%;
-    height: 400px;
 }
 
 footer{
